@@ -15,7 +15,6 @@
         #container {
             width: 1440px;
             height: 2652px;
-            background-color: antiquewhite;
         }
         
         #top {
@@ -23,7 +22,17 @@
             align-items: center;
             justify-content: center;
             justify-content: space-between;
-            /* margin-top: 5px; */
+        }
+        
+        #top_left {
+            margin-right: 100px;
+        }
+        
+        #top_right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 370px;
         }
         
         #center {}
@@ -36,6 +45,7 @@
         
         #center_link_tab {
             display: flex;
+            margin-left: 105px;
         }
         
         #center_review {
@@ -50,24 +60,65 @@
         }
         
         #center_review_right {
-            margin-left: 550px;
+            margin-left: 400px;
+            font-size: larger;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        #center_picture {
+            display: flex;
+            margin-left: 100px;
+        }
+        
+        #center_picture_left {
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #center_picture_right {
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+        }
+        
+        #center_picture_right_top {
+            display: flex;
+        }
+        
+        #center_picture_right_top_left {}
+        
+        #center_picture_right_top_right {
+            margin-left: 15px;
+        }
+        
+        #center_picture_right_bot {
+            display: flex;
+        }
+        
+        #center_picture_right_bot_left {}
+        
+        #center_picture_right_bot_right {
+            margin-left: 15px;
         }
         
         #bot {}
         
-        #top_left {
-            margin-right: 300px;
-        }
-        
-        #top_right {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 370px;
-        }
-        
         #opacity {
             opacity: 0.5;
+        }
+        
+        .margin_left {
+            margin-left: 20px;
+        }
+        
+        .text {
+            width: 300px;
+            height: 30px;
+            background: url(//Share_1.png);
+            background-color: rgb(248, 248, 248);
+            border-width: 0;
+            border-radius: 7px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
     </style>
 </head>
@@ -75,23 +126,25 @@
 <body>
     <div id="wrapper">
         <div id="container">
+
             <div id="top">
                 <div id="top_left">
                     <img src="Logo.png" alt="" width="100px" height="35px">
-                    <a href="https://www.facebook.com/">Home</a>
-                    <a href="https://www.facebook.com/">Promotions</a>
-                    <a href="https://www.facebook.com/">Best-Sellers</a>
-                    <a href="https://www.facebook.com/">New Releases</a>
-                    <a href="https://www.facebook.com/">Support</a>
+                    <a class="margin_left" href="https://www.facebook.com/">Home</a>
+                    <a class="margin_left" href="https://www.facebook.com/">Promotions</a>
+                    <a class="margin_left" href="https://www.facebook.com/">Best-Sellers</a>
+                    <a class="margin_left" href="https://www.facebook.com/">New Releases</a>
+                    <a class="margin_left" href="https://www.facebook.com/">Support</a>
                 </div>
 
                 <div id="top_right">
-                    <input type="text" placeholder="Search..." width="300px" height="50px">
-                    <img src="Bell 1.png" alt="" width="40px" height="40px">
-                    <img src="Shopping cart simple 1.png" alt="" width="40px" height="40px">
-                    <img src="Avatar 757.png" alt="" width="40px" height="40px">
+                    <input type="text" placeholder=" Search..." class="text">
+                    <img src="Bell 1.png" alt="" width="30px" height="30px">
+                    <img src="Shopping cart simple 1.png" alt="" width="30px" height="30px">
+                    <img src="Avatar 757.png" alt="" width="30px" height="30px">
                 </div>
             </div>
+
             <div id="center">
                 <br><br>
                 <div id="center_link_tab">
@@ -100,9 +153,11 @@
                     </div>
                     Product title
                 </div><br>
+
                 <div id="center_title">
                     Product Tile
                 </div>
+
                 <div id="center_review">
                     <div id="center_review_left">
                         <img src="Rating 303.png" alt=""> 4.20
@@ -110,11 +165,36 @@
                     </div>
 
                     <div id="center_review_right">
-                        <img src="Share 1.png" alt="" width="20px" height="20px"> Share
+                        <img src="Share_1.png" alt="" width="20px" height="20px"> Share
                         <img src="Heart 23.png" alt="" width="20px" height="20px"> Save
+                    </div>
+                </div><br>
+
+                <div id="center_picture">
+                    <div id="center_picture_left">
+                        <img src="Image 1705.png" alt="">
+                    </div>
+                    <div id="center_picture_right">
+                        <div id="center_picture_right_top">
+                            <div id="center_picture_right_top_left">
+                                <img src="Image 1708.png" alt="" width="270px" height="215px">
+                            </div>
+                            <div id="center_picture_right_top_right">
+                                <img src="Image 1707.png" alt="" width="270px" height="215px">
+                            </div>
+                        </div>
+                        <div id="center_picture_right_bot">
+                            <div id="center_picture_right_bot_left">
+                                <img src="Image 1706.png" alt="" width="270px" height="215px">
+                            </div>
+                            <div id="center_picture_right_bot_right">
+                                <img src="Image 1709.png" alt="" width="270px" height="215px">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div id="bot"></div>
         </div>
     </div>
