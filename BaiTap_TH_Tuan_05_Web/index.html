@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        /*CENTER*/
+        
+        #center {
+            /* display: flex; */
+            width: 910px;
+            background-color: rgb(235, 235, 235);
+        }
+        
+        #center_title {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+        }
+        
+        #center_title_left {}
+        
+        #center_title_right {
+            margin-left: 540px;
+        }
+        
+        #center_time {
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        /*RIGHT*/
+        
+        #right {
+            width: 440px;
+            background-color: rgb(194, 194, 194);
+        }
+        /*LEFT*/
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #left_below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        .invert {
+            filter: invert();
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+        
+        #sqare {
+            width: 90px;
+            height: 35px;
+            background-color: hsl(330, 83%, 38%);
+            border-radius: 50px;
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        
+        #clock_top {
+            width: 90px;
+            height: 35px;
+            background-color: transparent;
+            border-color: aqua;
+            border-width: 30px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item" src="logo.png" alt="">
+                    <img class="item" src="home.png" alt="">
+                    <img class="item" src="chatting.png" alt="">
+                    <img class="item" src="calender.png" alt="">
+                    <img class="item" src="cam.png" alt="">
+                    <img class="item" src="user.png" alt="">
+                </div>
+
+                <div id="left_below">
+                    <img src="avatar.png" width="44" alt="">
+                    <img id="setting" src="setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">
+                <div id="center_title">
+                    <div id="center_title_left">
+                        <h1>Meeting title</h1>
+                    </div>
+                    <div id="center_title_right">
+                        <div id="clock_top" width="20px" height="20px"></div>
+                    </div>
+                </div><br>
+                <div id="center_time">
+                    <div id="sqare">
+                        <img src="user.png" alt="" width="20px" height="20px" class="invert"> Interal
+                    </div>
+                    <img src="calender_small.png" alt="">
+                    <p>Sep 02, 2022 | 08:00 - 09:00 AM</p>
+                </div>
+
+            </div>
+            <div id="right">right</div>
+
+        </div>
+    </div>
+</body>
+
+</html>
