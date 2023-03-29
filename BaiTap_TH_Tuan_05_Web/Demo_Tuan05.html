@@ -16,7 +16,7 @@
             width: 1440px;
             height: 2652px;
         }
-        
+        /* TOP */
         #top {
             display: flex;
             align-items: center;
@@ -34,7 +34,7 @@
             justify-content: center;
             margin-left: 370px;
         }
-        
+        /* CENTER */
         #center {}
         
         #center_title {
@@ -54,6 +54,7 @@
         
         #center_review_left {
             display: flex;
+            align-items: center;
             width: 300px;
             margin-right: 300px;
             margin-left: 100px;
@@ -95,14 +96,52 @@
             display: flex;
         }
         
-        #center_picture_right_bot_left {}
-        
-        #center_picture_right_bot_right {
-            margin-left: 15px;
+        #center_picture_right_bot_left {
+            margin-top: 15px;
         }
         
+        #center_picture_right_bot_right {
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+
+        #Product_description{
+            width: 1440px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #Product_description_left_top{
+            margin-left: 100px;
+        }
+        #Product_description_left_bot{
+            display: flex;
+        }
+        #Product_description_left_bot1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        #Product_description_left_bot2{
+            display: flex;
+            flex-direction: column;
+        }
+        #Product_description_left_bot3{
+            display: flex;
+            flex-direction: column;
+        }
+        #Product_description_left_bot4{
+            display: flex;
+            flex-direction: column;
+        }
+        #Product_description_right{
+            margin-left: 325px;
+            margin-right: 200px;
+        }
+        /* BOTTOM */
         #bot {}
-        
+        /* OTHER */
         #opacity {
             opacity: 0.5;
         }
@@ -110,15 +149,27 @@
         .margin_left {
             margin-left: 20px;
         }
-        
-        .text {
-            width: 300px;
-            height: 30px;
-            background: url(//Share_1.png);
-            background-color: rgb(248, 248, 248);
-            border-width: 0;
-            border-radius: 7px;
+        .inline{
+            max-width: 400px;
+            margin:auto;
+        }
+        .input-icons {
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(247, 247, 247);
+            border: 0;
+            border-radius: 2px;
+        }
+        .input_field{
+            height: 32px;
+            width: 200px;
+            background-color: rgb(247, 247, 247);
+            border: 0;
+            border-radius: 2px;
+        }
+        .p{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 15px;
         }
     </style>
 </head>
@@ -138,7 +189,12 @@
                 </div>
 
                 <div id="top_right">
-                    <input type="text" placeholder=" Search..." class="text">
+                    <form action="" class="inline">
+                        <div class="input-icons">
+                            <img src="Magnifying Glass 1.png" alt="" width="35px" height="30px">
+                        </div>
+                    </form>
+                        <input class="input_field" type="text" placeholder="Search ...">
                     <img src="Bell 1.png" alt="" width="30px" height="30px">
                     <img src="Shopping cart simple 1.png" alt="" width="30px" height="30px">
                     <img src="Avatar 757.png" alt="" width="30px" height="30px">
@@ -146,6 +202,7 @@
             </div>
 
             <div id="center">
+                <!-- Title Review -->
                 <br><br>
                 <div id="center_link_tab">
                     <div id="opacity">
@@ -160,7 +217,7 @@
 
                 <div id="center_review">
                     <div id="center_review_left">
-                        <img src="Rating 303.png" alt=""> 4.20
+                        <img src="Rating 303.png" alt=""> <b>4.2D</b>
                         <div id="opacity">(99 reviews)</div>
                     </div>
 
@@ -177,20 +234,51 @@
                     <div id="center_picture_right">
                         <div id="center_picture_right_top">
                             <div id="center_picture_right_top_left">
-                                <img src="Image 1708.png" alt="" width="270px" height="215px">
+                                <img src="Image 1708.png" alt="" width="270px" height="207px">
                             </div>
                             <div id="center_picture_right_top_right">
-                                <img src="Image 1707.png" alt="" width="270px" height="215px">
+                                <img src="Image 1707.png" alt="" width="270px" height="207px">
                             </div>
                         </div>
                         <div id="center_picture_right_bot">
                             <div id="center_picture_right_bot_left">
-                                <img src="Image 1706.png" alt="" width="270px" height="215px">
+                                <img src="Image 1706.png" alt="" width="270px" height="207px">
                             </div>
                             <div id="center_picture_right_bot_right">
-                                <img src="Image 1709.png" alt="" width="270px" height="215px">
+                                <img src="Image 1709.png" alt="" width="270px" height="207px">
                             </div>
                         </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Title description -->
+                <div id="Product_description">
+                    <div id="Product_description_left_top">
+                        <div>
+                            <p class="p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem lorem aliquam sed lacinia quis. Nibh ductumst vulptate odio pellentesque sit quis ac, sit ipsum. Sit rhoncus velit in sed massa arcu sit eu. Vitae et eget lorem non dui. Sollicitudin ut mi adipiscing duis.</p>
+                            <p class="p">Convallis in semper laoreet nigh leo. Vivamus malesuada ipsim pulvinar non rutrum risus dui, risus. Purus massa velit iaculis tincidunt tortor, risus, scelerisque risus. In at lorem pellentesque orci arnean dictum dignissim in. Aenea pulcinar diam interdum ullamcorper. Vel urna, tortor, massa metus purus metus. Maecenas mollis in velit auctor cursus scelerisque eget.</p>
+                        </div>
+                        <br>
+                        <div id="Product_description_left_bot">
+                            <div id="Product_description_left_bot1">
+                                <img src="Truck 1.png" alt="" width="30px" height="30px"><br>
+                                <img src="Globe 1.png" alt="" width="30px" height="30px"><br>
+                                <img src="Chat dots 1.png" alt="" width="30px" height="30px"><br>
+                            </div>
+                            <div id="Product_description_left_bot2">
+                                <p>Free delivery</p><br>
+                                <p>Made in USA</p><br>
+                                <p>100% authentic</p><br>
+                            </div>
+                            <div id="Product_description_left_bot3"></div>
+                            <div id="Product_description_left_bot4"></div>
+                        </div>
+
+                        <div id="Product_description_right"></div>
+                    </div>
+
+                    <div id="Product_description_right">
+                        <h3>$99</h3>
                     </div>
                 </div>
             </div>
